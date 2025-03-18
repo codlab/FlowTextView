@@ -10,10 +10,12 @@ buildscript {
 }
 
 apply plugin: 'com.android.library'
+apply plugin: "kotlin-android"
 //apply plugin: 'maven'
 //apply plugin: 'signing'
 
 android {
+    namespace "uk.co.deanwild.flowtextview.flowtextview"
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
